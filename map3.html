@@ -81,6 +81,7 @@ const gsimap_init = function(map, layer) {
 			?uri ic:地理座標 [ ic:緯度 ?lat; ic:経度 ?lng; ].
 			filter(contains(str(?name),'駐車場'))
         } limit 100
+
     `
 
 	querySPARQL(query, function(data) {

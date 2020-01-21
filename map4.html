@@ -75,6 +75,7 @@ const gsimap_init = function(map, layer) {
     // SPARQLクエリー
 	var query = `
         prefix ic: <http://imi.go.jp/ns/core/rdf#>
+	//prefix xsd: <http://www.w3>
         
 		select ?uri ?name ?lat ?lng {
 			?uri ic:名称 [ ic:表記 ?name ].
